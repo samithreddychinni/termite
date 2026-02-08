@@ -7,3 +7,6 @@ termite
 
 # Comes from air
 tmp
+
+# ignores the  dev.log file
+*.log

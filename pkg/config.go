@@ -10,16 +10,16 @@ import (
 )
 
 type Config struct {
-	LogEnv      string `mapstructure:"env"`
-	RabbitMQURL string `mapstructure:"rabbitmq_url"`
+	LogEnv      string `koanf:"env"`
+	RabbitMQURL string `koanf:"rabbitmq_url"`
 	WoC         struct {
-		WebhookURL string `mapstructure:"webhook_url"`
-		QueueName  string `mapstructure:"queue_name"`
-	} `mapstructure:"woc"`
+		WebhookURL string `koanf:"webhook_url"`
+		QueueName  string `koanf:"queue_name"`
+	} `koanf:"woc"`
 	AIVerse struct {
-		WebhookURL string `mapstructure:"webhook_url"`
-		QueueName  string `mapstructure:"queue_name"`
-	} `mapstructure:"aiverse"`
+		WebhookURL string `koanf:"webhook_url"`
+		QueueName  string `koanf:"queue_name"`
+	} `koanf:"aiverse"`
 }
 
 var AppConfig *Config
