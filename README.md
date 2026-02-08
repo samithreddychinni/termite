@@ -71,7 +71,7 @@ Once, everything is configured, type - `make run` in your terminal.
 To test webhook dispatch without an external endpoint, you can run the included mock server:
 
 ```bash
-go run cmd/mock-server/main.go
+go run mock-server/main.go
 ```
 
 The mock server listens on port `:8080` and logs all received payloads to the console. Ensure your `env.toml` points to `http://localhost:8080/woc-webhook` or `http://localhost:8080/aiverse-webhook`.

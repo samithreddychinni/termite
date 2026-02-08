@@ -18,3 +18,8 @@ tasks:
     desc: Insert WOC data
     cmds:
       - bash scripts/insert_woc_data.sh
+
+  mock:
+    desc: Run the mock server
+    cmds:
+      - go run mock-server/main.go
